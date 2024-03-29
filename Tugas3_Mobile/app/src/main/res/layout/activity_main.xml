@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/toobar"/>
+
+        <ImageView
+            android:id="@+id/nail1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/nail1"
+            android:paddingTop="40dp"
+            android:paddingLeft="30dp"/>
+
+        <ImageView
+            android:id="@+id/nail2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/nail2"
+            android:paddingTop="20dp"
+            android:paddingLeft="30dp"/>
+
+        <ImageView
+            android:id="@+id/nail3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/nail1" />
+
+        <!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="400dp"-->
+<!--            android:textColor="@color/purpel"-->
+<!--            android:textSize="36dp"-->
+<!--            android:text="Home"-->
+<!--            android:layout_gravity="center" />-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start">
+
+        <include
+            layout="@layout/nav_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
